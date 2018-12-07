@@ -13,6 +13,8 @@ public class Health : MonoBehaviour {
     private float flashTime;
     public AudioSource explosionAudio;
 
+    public GameObject deathExplosion;
+
     private void Start() {
         flashTime = 0.08f;
         originalColor = meshRenderers[0].material.color;
@@ -53,6 +55,9 @@ public class Health : MonoBehaviour {
             GameManager.instance.beaconsLeftList.Remove(this);
         }
 
+        GameObject deathParticle = Instantiate(deathExplosion, transform.position, Quaternion.identity);
+        Destroy(deathParticle, 2f);
+
         gameObject.SetActive(false);
     }
 
@@ -69,5 +74,4 @@ public class Health : MonoBehaviour {
             mesh.material.color = originalColor;
         }
     }
-
 }

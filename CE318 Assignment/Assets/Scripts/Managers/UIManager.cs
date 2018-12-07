@@ -20,8 +20,8 @@ public class UIManager : MonoBehaviour {
 
     public GameManager gameManager;
     public Text playerHealthText;
-    public Text enemiesLeft;
-    public Text beaconsLeftText;
+    public TextMeshProUGUI enemiesLeft;
+    public TextMeshProUGUI beaconsLeftText;
     public GameObject youWinPanel;
     public GameObject allEnemiesDestroyedText;
     public GameObject noDamageTakenText;
@@ -42,8 +42,8 @@ public class UIManager : MonoBehaviour {
 
     private void Update() {
         playerHealthText.text = "Player Health: " + player.currentHealth;
-        enemiesLeft.text = "Enemies Left: " + gameManager.enemiesLeftList.Count;
-        beaconsLeftText.text = "Beacons Left: " + gameManager.beaconsLeftList.Count;
+        enemiesLeft.text = gameManager.enemiesLeftList.Count.ToString();
+        beaconsLeftText.text = gameManager.beaconsLeftList.Count.ToString();
 
         if (gameManager.levelWon) {
             youWinPanel.SetActive(true);

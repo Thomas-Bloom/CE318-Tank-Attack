@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour {
     public Transform bulletSpawn;
     public float fireRate;
     public AudioSource gunAudio;
+    public GameObject shootParticle;
 
     private float nextFire;
 
@@ -23,6 +24,8 @@ public class Weapon : MonoBehaviour {
                 gunAudio.Play();
                 nextFire = Time.time + fireRate;
                 Instantiate(bullet, bulletSpawn.position, transform.rotation);
+                GameObject currentParticle = Instantiate(shootParticle, bulletSpawn.position, transform.rotation);
+                Destroy(currentParticle, 0.5f);
             }
         }
         else {
