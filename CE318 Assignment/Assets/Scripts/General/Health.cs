@@ -16,12 +16,9 @@ public class Health : MonoBehaviour {
     public GameObject deathExplosion;
 
     private void Start() {
+        currentHealth = startHealth;
         flashTime = 0.08f;
         originalColor = meshRenderers[0].material.color;
-    }
-
-    private void OnEnable() {
-        currentHealth = startHealth;
     }
 
     public void TakeDamage(int damage) {

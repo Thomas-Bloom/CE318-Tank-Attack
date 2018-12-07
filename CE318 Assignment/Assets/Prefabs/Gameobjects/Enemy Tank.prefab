@@ -489,7 +489,8 @@ MonoBehaviour:
   bulletSpawn: {fileID: 4760367648699830}
   fireRate: 1
   gunAudio: {fileID: 0}
-  shootParticle: {fileID: 0}
+  shootParticle: {fileID: 1604637411555818, guid: 64891a0eb28db934898420d80ca07cb3,
+    type: 2}
 --- !u!114 &114487088739924880
 MonoBehaviour:
   m_ObjectHideFlags: 1

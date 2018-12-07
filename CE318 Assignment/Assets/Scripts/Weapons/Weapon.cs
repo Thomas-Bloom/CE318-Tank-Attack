@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour {
 
     public void ShootWeapon() {
         if (isPlayer) {
-            if (Input.GetMouseButtonDown(0) && Time.time > nextFire && Time.timeScale == 1f) {
+            if (Input.GetMouseButton(0) && Time.time > nextFire && Time.timeScale == 1f) {
                 gunAudio.Play();
                 nextFire = Time.time + fireRate;
                 Instantiate(bullet, bulletSpawn.position, transform.rotation);
@@ -33,6 +33,8 @@ public class Weapon : MonoBehaviour {
                 gunAudio.Play();
                 nextFire = Time.time + fireRate;
                 Instantiate(bullet, bulletSpawn.position, transform.rotation);
+                GameObject currentParticle = Instantiate(shootParticle, bulletSpawn.position, transform.rotation);
+                Destroy(currentParticle, 0.5f);
             }
         }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FirerateIncreaser : Powerup {
 
-    public float newFireRate = 0.001f;
+    public float newFireRate = 0.2f;
     public AudioSource pickupAudio;
     private GameObject powerupLight;
 

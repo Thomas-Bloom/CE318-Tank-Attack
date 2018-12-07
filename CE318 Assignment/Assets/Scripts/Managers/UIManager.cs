@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour {
     #endregion
 
     public GameManager gameManager;
-    public Text playerHealthText;
+    public TextMeshProUGUI playerHealthText;
     public TextMeshProUGUI enemiesLeft;
     public TextMeshProUGUI beaconsLeftText;
     public GameObject youWinPanel;
@@ -41,7 +41,7 @@ public class UIManager : MonoBehaviour {
     }
 
     private void Update() {
-        playerHealthText.text = "Player Health: " + player.currentHealth;
+        playerHealthText.text = player.currentHealth.ToString();
         enemiesLeft.text = gameManager.enemiesLeftList.Count.ToString();
         beaconsLeftText.text = gameManager.beaconsLeftList.Count.ToString();
 

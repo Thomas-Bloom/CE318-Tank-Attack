@@ -20,10 +20,6 @@ public class SettingsManager : MonoBehaviour {
             difficultyDropdown.value = saveLoad.difficultyNum;
     }
 
-    private void Start() {
-        saveLoad.LoadGameDifficulty();
-    }
-
     private void Update() {
         saveLoad = FindObjectOfType<SaveLoadManager>();
     }

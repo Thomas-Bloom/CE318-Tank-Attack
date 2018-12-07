@@ -93,6 +93,7 @@ public class SaveLoadManager : MonoBehaviour {
             print("Loaded data from file: " + file.Name);
 
             SceneManager.LoadScene(levelIndex);
+            LoadGameDifficulty();
         }
     }
 
@@ -106,6 +107,8 @@ public class SaveLoadManager : MonoBehaviour {
             file.Close();
 
             difficultyNum = data.difficulty;
+
+            print("Loaded difficulty: " + difficultyNum);
         }
     }
 
@@ -124,6 +127,7 @@ public class SaveLoadManager : MonoBehaviour {
                 difficultyNum = 2;
                 break;
         }
+        print("Difficulty: " + difficultyNum);
     }
 
 }
