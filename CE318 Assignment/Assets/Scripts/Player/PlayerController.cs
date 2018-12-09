@@ -14,11 +14,17 @@ public class PlayerController : MonoBehaviour {
     private float turnInput;
 
     // Powerup...
-    private float baseMoveSpeed;
-    private float baseFireRate;
+    public float baseMoveSpeed;
+    public float baseFireRate;
 
     private void Awake() {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Start() {
+        baseMoveSpeed = moveSpeed;
+        baseFireRate = playerWeapon.fireRate;
+
     }
 
     private void OnEnable() {
@@ -53,7 +59,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void ActivateBoost(float amount) {
-        baseMoveSpeed = moveSpeed;
         moveSpeed += amount;
     }
 
@@ -62,7 +67,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void ActivateRapidFire(float amount) {
-        baseFireRate = playerWeapon.fireRate;
         playerWeapon.fireRate = amount;
     }
 

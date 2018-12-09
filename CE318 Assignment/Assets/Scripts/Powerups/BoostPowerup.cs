@@ -21,6 +21,7 @@ public class BoostPowerup : Powerup {
 
     protected override void Expired() {
         player.DeactivateBoost();
+        player.DeactivateRapidFire();
         base.Expired();
     }
 }
