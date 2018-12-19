@@ -1,4 +1,4 @@
-#CE318-Tank-Attack
+CE318-Tank-Attack
 
 ## Software Used
 1. Unity 2018.2
