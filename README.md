@@ -5,18 +5,25 @@
 2. Aseprite
 3. GitKraken
 
-## Assignment goals
-1. Develop a game from scratch using Unity 2018.2
-2. One playable character
-3. Dynamic camera that follows the player
-4. Collisions between game objects
-5. Working physics
-6. Multiple audio sources (Music, static sound effects, 3D sound effects)
-7. Multiple light sources
-8. Main menu
-9. Settings menu (Volume slider, music toggle, difficulty selector)
-10. End screen when player completes a level
-11. Splash screen
-12. Multiple levels connected together with fade transisitons (Tutorial, level1, level2)
+## Game Features
+1. One playable character
+2. Dynamic camera that follows the player
+3. Collisions between game objects
+4. Working physics
+5. Multiple audio sources (Music, static sound effects, 3D sound effects)
+6. Multiple light sources
+7. Main menu
+8. Settings menu (Volume slider, music toggle, difficulty selector)
+9. End screen when player completes a level
+10. Splash screen
+11. Multiple levels connected together with fade transisitons (Tutorial, level1, level2)
+12. Animations for aiming
+13. Powerup system (Boost, fire rate increaser, health)
+14. Difficulty levels (Enemies have more health, player has less health)
+15. Game save/load system (Implemented by serialising an object and saving it to an external file
+16. Multiple particle effects (Explosions, gun muzzle flash, etc)
+17. Multiple materials (Floor, walls, tanks, beacons, particles, powerups)
+18. AI (Developed using Unity's NavMesh feature, if I had more time to implement this I would have created a line of sight system)
+
 
 
