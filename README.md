@@ -27,7 +27,11 @@
 
 
 ## Images
+### Explosion Particle System
 ![alt text](Explosion_Effect.png "Explosion Particle System")
+### Level Maze
 ![alt text](Maze.png "Level Maze")
+### Sample of code that handles powerup functionality
 ![alt text](Powerup_Code.png "Powerup Code")
+### Sample of code that handles saving of game to file
 ![alt text](Save_Code.png "Save Game Code")
